@@ -174,7 +174,6 @@ var DogAnalyticsOptions = (typeof DogAnalyticsOptions) ? DogAnalyticsOptions : {
 			}
 		}
 		if (analytics.settings.enableTrackFileDownloads) {
-			console.log(href.search(/.pdf|\.doc|\.docx|\.xls|\.jpg|\.jpeg|\.png|\.gif|\.zip|\.dmg|\.exe|\.psd|\.ai|\.csv|\.mp3|\.txt|\.tsv|\.m4a|\.wav|\.indd|\.odm|\.odt|\.ott/i));
 			if (href.search(/.pdf|\.doc|\.docx|\.xls|\.jpg|\.jpeg|\.png|\.gif|\.zip|\.dmg|\.exe|\.psd|\.ai|\.csv|\.mp3|\.txt|\.tsv|\.m4a|\.wav|\.indd|\.odm|\.odt|\.ott/i) !== -1) {
 				$(this).trackclick('Download');
 			}
